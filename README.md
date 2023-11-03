@@ -1,6 +1,6 @@
 # Employee Management App
 
-This application allows you to manage employee records. You can add, update, delete, and search for employees.
+This application allows you to manage employee records. You can add, delete, update and search for employees.
 
 ## Usage
 

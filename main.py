@@ -11,6 +11,7 @@ class Main(tk.Frame):
         self.conn = sqlite3.connect('db.db')
 
     def init_main(self):
+        # Create widgets
         toolbar=tk.Frame(bg='#d7d8e0', bd=2)
         toolbar.pack(side=tk.TOP, fill=tk.X)
         self.add_img=tk.PhotoImage(file='./img/add.png')
@@ -41,6 +42,7 @@ class Main(tk.Frame):
 
         self.tree.pack(side=tk.LEFT)
 
+        # Widget functions
     def add_employee(self):
         name = simpledialog.askstring("Input", "Enter employee name:")
         phone = simpledialog.askstring("Input", "Enter employee phone:")
@@ -91,7 +93,7 @@ class Main(tk.Frame):
             self.view_records()
         else:
             messagebox.showerror("Error", "Сотрудник не найден")
-
+        # Secondary functions
     def records(self, Name, TelefonNumber, Email, Salary):
         self.db.insert_data(Name, TelefonNumber, Email, Salary)
 
