@@ -42,7 +42,7 @@ class Main(tk.Frame):
 
         self.tree.pack(side=tk.LEFT)
 
-        # Widget functions
+        # Widget functions:
     def add_employee(self):
         name = simpledialog.askstring("Input", "Enter employee name:")
         phone = simpledialog.askstring("Input", "Enter employee phone:")
@@ -93,7 +93,7 @@ class Main(tk.Frame):
             self.view_records()
         else:
             messagebox.showerror("Error", "Сотрудник не найден")
-        # Secondary functions
+        # Secondary functions:
     def records(self, Name, TelefonNumber, Email, Salary):
         self.db.insert_data(Name, TelefonNumber, Email, Salary)
 
